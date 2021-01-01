@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import us.timinc.jsonifycraft.description.BlockDescription;
+import us.timinc.jsonifycraft.description.FoodDescription;
 import us.timinc.jsonifycraft.description.ItemDescription;
 import us.timinc.jsonifycraft.deserializers.GameDeserializer;
 
@@ -36,6 +37,7 @@ public class JsonifyCraft {
         log("--Registering deserializers--");
         GameDeserializer.registerDescription("item", ItemDescription.class);
         GameDeserializer.registerDescription("block", BlockDescription.class);
+        GameDeserializer.registerDescription("food", FoodDescription.class);
     }
 
     private void loadGameObjects() {
