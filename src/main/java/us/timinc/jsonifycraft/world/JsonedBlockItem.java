@@ -4,10 +4,9 @@ import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemStack;
 import us.timinc.jsonifycraft.description.BlockDescription;
-import us.timinc.jsonifycraft.description.WorldObjectDescription;
 
 public class JsonedBlockItem extends BlockItem {
-    private WorldObjectDescription description;
+    private final BlockDescription description;
 
     public JsonedBlockItem(Block block, BlockDescription blockDescription) {
         super(block, blockDescription.genItemProperties());
